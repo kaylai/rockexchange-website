@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secret Santa Rock Exchange</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+    <link rel="stylesheet" href="app.css">
+    <!-- mailchip css -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <style>
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body id="top">
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!-- page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+        <!-- # header
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__content">
+
+                <div class="s-header__logo">
+                    <a class="logo" href="index.html">
+                        <img src="images/logo.gif" alt="The Fourth Annual Secret Santa #RockExchange2021">
+                    </a>
+                </div>
+
+                <ul class="s-header__social">
+                    <li>
+                        <a href="https://twitter.com/SS_RockExchange">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                            <span class="screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div> <!-- end s-header__content -->
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="s-intro">
+
+            <div class="s-intro__bg"></div>
+
+            <div class="row s-intro__content">
+                <div class="column lg-12">
+
+                    <!--div class="counter">
+                        <div class="counter__time">
+                            <span class="ss-days">365</span>
+                            <span>days</span>
+                        </div>
+                        <div class="counter__time">
+                            <span class="ss-hours">01</span>
+                            <span>hours</span>
+                        </div>
+                        <div class="counter__time minutes">
+                            <span class="ss-minutes">01</span>
+                            <span>mins</span>
+                        </div>
+                        <div class="counter__time">
+                            <span class="ss-seconds">55</span>
+                            <span>secs</span>
+                        </div>
+                    </div>  <-- end counter -->
+
+                    <div class="s-intro__content-bottom">
+                        <h1 class="s-intro__content-title">The shipping deadline has passed! If you haven’t shipped yet, ship ASAP and confirm shipped on your profile to avoid being added to the Naughty List.</h1>
+                        <!--p>
+                        Official home of the Secret Santa Rock Exchange 2021
+                        </p-->
+                    </div>
+
+                </div>
+
+                <div class="s-intro__scroll">
+                    <p class="scroll-text">Scroll For More</p>
+                    <a href="#info" class="smoothscroll">
+                        <div class="mouse"></div>
+                    </a>
+                    <div class="end-top"></div>
+                </div> <!-- end s-intro__scroll -->
+
+            </div> <!-- intro__content -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # info
+        ================================================== -->
+        <section id="info" class="s-info">
+
+            <div class="s-info__bg"></div>
+
+            <div class="row">
+                <div class="column lg-12">
+
+                    <nav class="tab-nav">
+                        <ul class="tab-nav__list">
+                            <li class="active" data-id="tab-about">
+                                <a href="#tab-about">
+                                    What Is It?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-signup">
+                                    Sign Up!
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-update">
+                                    Update Your Profile
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> <!-- end tab-nav -->
+
+                    <div class="tab-content">
+
+                        <!-- 01 - tab about -->
+                        <div id="tab-about" class='tab-content__item'>
+
+                            <div class="row tab-content__item-header">
+                                <div class="column">
+                                    <h2>What is the Secret Santa Rock Exchange?</h2>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="images/1-1024x576.png" />
+                                    <p class="lead">By signing up, you are agreeing to send a cool rock from your collection to another randomly selected person on this list. In turn, another person will be randomly matched with you, and you’ll get a rock in the mail from them!
+                                    </p>
+                                    <p>Your information will be kept private and only shared with the moderators of this Exchange and with the person matched to you (so that they can send you your rock).
+                                    </p>
+                                    <ul>
+                                        <li><a href="#howwork">How does it work?</a></li>
+                                        <li><a href="#dates">Important dates</a></li>
+                                        <li><a href="#moreinfo">Important info</a></li>
+                                    </ul>
+                                    <h2 id="howwork">How does it work?</h2>
+                                    <img src="images/2-1024x576.png" />
+                                    <img src="images/3-1024x576.png" />
+                                    <img src="images/4-1024x576.png" />
+                                    <img src="images/5-1024x576.png" />
+                                    <img src="images/6-1024x576.png" />
+
+                                    <h2 id="dates">Important Dates</h2>
+                                    <ul>
+                                        <li>4th October&ndash;4th November, 2021: Regular sign ups</li>
+                                        <li>4th&ndash;18th November, 2021: Matching</li>
+                                        <li>18th November&ndash;10th December, 2021: Shipping (and receiving!)</li>
+                                        <li><strong>Be prepared to ship/receive your rock through December</strong></li>
+                                    </ul>
+                                    <h2 id="moreinfo">Important Info</h2>
+                                    <p>A Twitter handle is not required to participate.</p>
+                                    <p>Your giftee (the person you send a rock to) and your gifter (the person who sends you your rock) may not be the same person.</p>
+                                    <p><strong>What to include:</strong> DO include a note describing the sample, including what it is, where it came from, when you purchased or collected it, etc. Last year, we noticed that the stories behind the rocks were just as exciting as the rocks themselves!</p>
+                                    <p><strong>Sample value:</strong> We recommend that you do not share extremely valuable samples. It will be difficult to match “value” from sample to sample (especially since some rocks are quite difficult to assess the value of), so please do not be disappointed if you feel that the rock you receive is “lesser” than the one you sent to someone else. We’re all just doing this for fun, to see some cool rocks, to share our rocks, and to meet other rock hounds.</p>
+                                    <p><strong>International shipping:</strong> We love the idea of rocks crossing international borders, but shipping internationally can be very expensive and will require the sender to fill out customs forms. As far as we know, shipping rocks between countries is not banned anywhere, however soil is often not allowed without special permission. Special considerations may be required if you choose to ship internationally, and you will be required to complete any required customs documentation. We are not the post office and cannot advise on this.</p>
+                                    <p><strong>Re-gifting:</strong> In the event that some people do not receive a rock through the exchange, we will have a second round of matching. If you decided to be a re-gifter, you may be asked to send a second rock to someone you get matched to in the second round of matching. Hopefully we won’t need this!</p>
+                                    <p><strong>PLEASE DO NOT SHIP SOIL:</strong> For more information on shipping to or from specific countries, please consult the postal authority in the country in question. If you get matched internationally and have questions, we will do our best to help you get your rock to where it needs to be (or to re-match you to someone else if you decide you cannot ship to the person you are assigned).</p>
+                                    <p><strong>DO NOT SEND HAZARDOUS OR BIOLOGICAL SAMPLES.</strong></p>
+                                    <div class="row">
+                                        <div class="column lg-6 tab-12">
+                                            <h4>Follow the official Twitter</h4>
+                                            <a href="https://twitter.com/SS_RockExchange" class="btn btn--primary u-fullwidth">@SS_RockExchange</a>
+                                        </div>
+                                    </div>
+                                    <p><a href="#info">^ Back to top</a></p>
+                                </div>
+                            </div>
+
+                        </div> <!-- end 01 - tab about -->
+
+                        <!-- 02 - tab signup -->
+                        <div id="tab-signup" class='tab-content__item'>
+
+                            <div class="row tab-content__item-header">
+                                <div class="column">
+                                    <!--h2>Sign Up!</h2-->
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <p class="lead">
+                                    Sign ups are closed for 2021.
+                                    </p>
+                                    <p>If you signed up, matching ends on Nov. 18. After that day, keep an eye on your email for information about your giftee. Check your spam folder and consider adding ssrockexchange[at]gmail[dot]com to your email whitelist to ensure you receive further correspondence from the Exchange.</p>
+                                    <!--p>After clicking SUBSCRIBE, be sure to check your email for a confirmation that your sign-up was successful. Check your spam folder and consider adding ssrockexchange[at]gmail[dot]com to your email whitelist to ensure you receive further correspondence from the Exchange.</p>
+                                    <-- direct link: http://eepurl.com/dKoot6 -->
+                                    <!-- Begin Mailchimp Signup Form -->
+                                    <!--div id="mc_embed_signup">
+                                    <form action="https://twitter.us19.list-manage.com/subscribe/post?u=6ccdc0ff3ea35bc812e71e196&amp;id=04a5d0c4c0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll">
+                                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                    <div class="mc-field-group">
+                                    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                                    </label>
+                                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                    </div>
+                                    <div class="mc-field-group">
+                                    <label for="mce-TWITTER">Your Twitter handle (optional) </label>
+                                    <input type="text" value="" name="TWITTER" class="" id="mce-TWITTER">
+                                    </div>
+                                    <div class="mc-field-group">
+                                    <label for="mce-FNAME">First Name </label>
+                                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                                    </div>
+                                    <div class="mc-field-group">
+                                    <label for="mce-LNAME">Last Name </label>
+                                    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                                    </div>
+                                    <div class="mc-address-group">
+                                    <div class="mc-field-group">
+                                       <label for="mce-ADDRESS-addr1">Your Mailing Address (where you receive your rock) </label>
+                                    <input type="text" value="" maxlength="70" name="ADDRESS[addr1]" id="mce-ADDRESS-addr1" class="">
+                                    </div>
+                                    <div class="mc-field-group">
+                                       <label for="mce-ADDRESS-addr2">Address Line 2</label>
+                                    <input type="text" value="" maxlength="70" name="ADDRESS[addr2]" id="mce-ADDRESS-addr2">
+                                    </div>
+                                    <div class="mc-field-group size1of2">
+                                       <label for="mce-ADDRESS-city">City</label>
+                                    <input type="text" value="" maxlength="40" name="ADDRESS[city]" id="mce-ADDRESS-city" class="">
+                                    </div>
+                                    <div class="mc-field-group size1of2">
+                                       <label for="mce-ADDRESS-state">State/Province/Region</label>
+                                    <input type="text" value="" maxlength="20" name="ADDRESS[state]" id="mce-ADDRESS-state" class="">
+                                    </div>
+                                    <div class="mc-field-group size1of2">
+                                       <label for="mce-ADDRESS-zip">Postal / Zip Code</label>
+                                    <input type="text" value="" maxlength="10" name="ADDRESS[zip]" id="mce-ADDRESS-zip" class="">
+                                    </div>
+                                    <div class="mc-field-group size1of2">
+                                       <label for="mce-ADDRESS-country">Country</label>
+                                    <select name="ADDRESS[country]" id="mce-ADDRESS-country" class=""><option value="164" selected>USA</option><option value="286">Aaland Islands</option><option value="274">Afghanistan</option><option value="2">Albania</option><option value="3">Algeria</option><option value="178">American Samoa</option><option value="4">Andorra</option><option value="5">Angola</option><option value="176">Anguilla</option><option value="175">Antigua And Barbuda</option><option value="6">Argentina</option><option value="7">Armenia</option><option value="179">Aruba</option><option value="8">Australia</option><option value="9">Austria</option><option value="10">Azerbaijan</option><option value="11">Bahamas</option><option value="12">Bahrain</option><option value="13">Bangladesh</option><option value="14">Barbados</option><option value="15">Belarus</option><option value="16">Belgium</option><option value="17">Belize</option><option value="18">Benin</option><option value="19">Bermuda</option><option value="20">Bhutan</option><option value="21">Bolivia</option><option value="325">Bonaire, Saint Eustatius and Saba</option><option value="22">Bosnia and Herzegovina</option><option value="23">Botswana</option><option value="181">Bouvet Island</option><option value="24">Brazil</option><option value="180">Brunei Darussalam</option><option value="25">Bulgaria</option><option value="26">Burkina Faso</option><option value="27">Burundi</option><option value="28">Cambodia</option><option value="29">Cameroon</option><option value="30">Canada</option><option value="31">Cape Verde</option><option value="32">Cayman Islands</option><option value="33">Central African Republic</option><option value="34">Chad</option><option value="35">Chile</option><option value="36">China</option><option value="185">Christmas Island</option><option value="37">Colombia</option><option value="204">Comoros</option><option value="38">Congo</option><option value="183">Cook Islands</option><option value="268">Costa Rica</option><option value="275">Cote D'Ivoire</option><option value="40">Croatia</option><option value="276">Cuba</option><option value="298">Curacao</option><option value="41">Cyprus</option><option value="42">Czech Republic</option><option value="318">Democratic Republic of the Congo</option><option value="43">Denmark</option><option value="44">Djibouti</option><option value="289">Dominica</option><option value="187">Dominican Republic</option><option value="45">Ecuador</option><option value="46">Egypt</option><option value="47">El Salvador</option><option value="48">Equatorial Guinea</option><option value="49">Eritrea</option><option value="50">Estonia</option><option value="51">Ethiopia</option><option value="189">Falkland Islands</option><option value="191">Faroe Islands</option><option value="52">Fiji</option><option value="53">Finland</option><option value="54">France</option><option value="193">French Guiana</option><option value="277">French Polynesia</option><option value="56">Gabon</option><option value="57">Gambia</option><option value="58">Georgia</option><option value="59">Germany</option><option value="60">Ghana</option><option value="194">Gibraltar</option><option value="61">Greece</option><option value="195">Greenland</option><option value="192">Grenada</option><option value="196">Guadeloupe</option><option value="62">Guam</option><option value="198">Guatemala</option><option value="270">Guernsey</option><option value="63">Guinea</option><option value="65">Guyana</option><option value="200">Haiti</option><option value="66">Honduras</option><option value="67">Hong Kong</option><option value="68">Hungary</option><option value="69">Iceland</option><option value="70">India</option><option value="71">Indonesia</option><option value="278">Iran</option><option value="279">Iraq</option><option value="74">Ireland</option><option value="323">Isle of Man</option><option value="75">Israel</option><option value="76">Italy</option><option value="202">Jamaica</option><option value="78">Japan</option><option value="288">Jersey  (Channel Islands)</option><option value="79">Jordan</option><option value="80">Kazakhstan</option><option value="81">Kenya</option><option value="203">Kiribati</option><option value="82">Kuwait</option><option value="83">Kyrgyzstan</option><option value="84">Lao People's Democratic Republic</option><option value="85">Latvia</option><option value="86">Lebanon</option><option value="87">Lesotho</option><option value="88">Liberia</option><option value="281">Libya</option><option value="90">Liechtenstein</option><option value="91">Lithuania</option><option value="92">Luxembourg</option><option value="208">Macau</option><option value="93">Macedonia</option><option value="94">Madagascar</option><option value="95">Malawi</option><option value="96">Malaysia</option><option value="97">Maldives</option><option value="98">Mali</option><option value="99">Malta</option><option value="207">Marshall Islands</option><option value="210">Martinique</option><option value="100">Mauritania</option><option value="212">Mauritius</option><option value="241">Mayotte</option><option value="101">Mexico</option><option value="102">Moldova, Republic of</option><option value="103">Monaco</option><option value="104">Mongolia</option><option value="290">Montenegro</option><option value="294">Montserrat</option><option value="105">Morocco</option><option value="106">Mozambique</option><option value="242">Myanmar</option><option value="107">Namibia</option><option value="108">Nepal</option><option value="109">Netherlands</option><option value="110">Netherlands Antilles</option><option value="213">New Caledonia</option><option value="111">New Zealand</option><option value="112">Nicaragua</option><option value="113">Niger</option><option value="114">Nigeria</option><option value="217">Niue</option><option value="214">Norfolk Island</option><option value="272">North Korea</option><option value="116">Norway</option><option value="117">Oman</option><option value="118">Pakistan</option><option value="222">Palau</option><option value="282">Palestine</option><option value="119">Panama</option><option value="219">Papua New Guinea</option><option value="120">Paraguay</option><option value="121">Peru</option><option value="122">Philippines</option><option value="221">Pitcairn</option><option value="123">Poland</option><option value="124">Portugal</option><option value="126">Qatar</option><option value="315">Republic of Kosovo</option><option value="127">Reunion</option><option value="128">Romania</option><option value="129">Russia</option><option value="130">Rwanda</option><option value="205">Saint Kitts and Nevis</option><option value="206">Saint Lucia</option><option value="324">Saint Martin</option><option value="237">Saint Vincent and the Grenadines</option><option value="132">Samoa (Independent)</option><option value="227">San Marino</option><option value="255">Sao Tome and Principe</option><option value="133">Saudi Arabia</option><option value="134">Senegal</option><option value="326">Serbia</option><option value="135">Seychelles</option><option value="136">Sierra Leone</option><option value="137">Singapore</option><option value="302">Sint Maarten</option><option value="138">Slovakia</option><option value="139">Slovenia</option><option value="223">Solomon Islands</option><option value="140">Somalia</option><option value="141">South Africa</option><option value="257">South Georgia and the South Sandwich Islands</option><option value="142">South Korea</option><option value="311">South Sudan</option><option value="143">Spain</option><option value="144">Sri Lanka</option><option value="293">Sudan</option><option value="146">Suriname</option><option value="225">Svalbard and Jan Mayen Islands</option><option value="147">Swaziland</option><option value="148">Sweden</option><option value="149">Switzerland</option><option value="285">Syria</option><option value="152">Taiwan</option><option value="260">Tajikistan</option><option value="153">Tanzania</option><option value="154">Thailand</option><option value="233">Timor-Leste</option><option value="155">Togo</option><option value="232">Tonga</option><option value="234">Trinidad and Tobago</option><option value="156">Tunisia</option><option value="157">Turkey</option><option value="158">Turkmenistan</option><option value="287">Turks &amp; Caicos Islands</option><option value="159">Uganda</option><option value="161">Ukraine</option><option value="162">United Arab Emirates</option><option value="262">United Kingdom</option><option value="163">Uruguay</option><option value="165">Uzbekistan</option><option value="239">Vanuatu</option><option value="166">Vatican City State (Holy See)</option><option value="167">Venezuela</option><option value="168">Vietnam</option><option value="169">Virgin Islands (British)</option><option value="238">Virgin Islands (U.S.)</option><option value="188">Western Sahara</option><option value="170">Yemen</option><option value="173">Zambia</option><option value="174">Zimbabwe</option></select>
+                                    </div>
+                                    </div>
+                                    <div class="mc-field-group">
+                                    <label for="mce-MMERGE4">Are you willing to ship internationally? </label>
+                                    <select name="MMERGE4" class="" id="mce-MMERGE4">
+                                    <option value=""></option>
+                                    <option value="Yes, I would like to ship internationally">Yes, I would like to ship internationally</option>
+                                    <option value="Yes, but I prefer domestic">Yes, but I prefer domestic</option>
+                                    <option value="No, I do not want to ship international">No, I do not want to ship international</option>
+                                    <option value="Domestic within Europe only (only for European participants, not UK)">Domestic within Europe only (only for European participants, not UK)</option>
+
+                                    </select>
+                                    </div>
+                                    <div class="mc-field-group">
+                                    <label for="mce-MMERGE7">Do you want to be a re-gifter? </label>
+                                    <select name="MMERGE7" class="" id="mce-MMERGE7">
+                                    <option value=""></option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+
+                                    </select>
+                                    </div>
+                                    <div class="mc-field-group">
+                                    <label for="mce-MMERGE8">Any rock type you'd like to add to your collection </label>
+                                    <input type="text" value="" name="MMERGE8" class="" id="mce-MMERGE8">
+                                    </div>
+                                    <div class="mc-field-group input-group">
+                                        <strong>Sign me up for the 2021 Exchange!  <span class="asterisk">*</span>
+                                    </strong>
+                                        <ul><li><input type="radio" value="Opt-in for 2021" name="SIGNUP2021" id="mce-SIGNUP2021-0">&nbsp;<label for="mce-SIGNUP2021-0">Opt-in for 2021</label></li>
+                                    <li><input type="radio" value="Do not include me in this year's exchange (you will be removed from the 2021 email list)" name="SIGNUP2021" id="mce-SIGNUP2021-1">&nbsp;<label for="mce-SIGNUP2021-1">Do not include me in this year's exchange (you will be removed from the 2021 email list)</label></li>
+                                    </ul>
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>    <-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <!--div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6ccdc0ff3ea35bc812e71e196_04a5d0c4c0" tabindex="-1" value=""></div>
+                                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                        </div>
+                                    </form>
+                                    </div>
+                                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[6]='TWITTER';ftypes[6]='text';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='MMERGE4';ftypes[4]='dropdown';fnames[7]='MMERGE7';ftypes[7]='dropdown';fnames[8]='MMERGE8';ftypes[8]='text';fnames[14]='SIGNUP2021';ftypes[14]='radio';fnames[19]='SHIPPED';ftypes[19]='dropdown';fnames[5]='MMERGE5';ftypes[5]='date';fnames[9]='COURIER';ftypes[9]='text';fnames[10]='TRACKINGOL';ftypes[10]='number';fnames[21]='MMERGE21';ftypes[21]='text';fnames[11]='RECEIVED';ftypes[11]='dropdown';fnames[12]='RECEIPTDAT';ftypes[12]='date';fnames[13]='GIFTEEFNAM';ftypes[13]='text';fnames[15]='GIFTEEEMAI';ftypes[15]='text';fnames[16]='GIFTEEADDR';ftypes[16]='address';fnames[17]='GIFTEETWIT';ftypes[17]='text';fnames[18]='GIFTEEROCK';ftypes[18]='text';fnames[20]='GIFTEELNAM';ftypes[20]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                                    <--End mc_embed_signup-->
+
+                                </div>
+                            </div>
+
+                        </div> <!-- end 02 - tab services -->
+
+                        <!-- 03 - tab update -->
+                        <div id="tab-update" class="tab-content__item">
+
+                            <div class="row tab-content__item-header">
+                                <div class="column">
+                                    <h2>Update Your Profile</h2>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+
+                                    <p class="lead">
+                                    We will need to generate a custom link so you can update your profile. You request this link by clicking the “Update Profile” button in any emails sent to you by the Exchange.
+                                    </p>
+                                    <p>Don't see a large button? Look for an “Update Preferences” link in small text in the footer of those emails.
+                                    </p>
+                                    <p>
+                                    Don’t have an old email to grab? Let us know, and we can send you a new one. To do so, please <a href="emailto:ssrockexchange@gmail.com">click here</a> to send an email to the host, who will then generate a custom link for you. Be sure to include the email address associated with your account.
+                                    </p>
+                                    <p>
+                                    If you have any issues, you can always contact us at ssrockexchange[at]gmail[dot]com.
+                                    </p>
+
+
+                                </div>
+                            </div>
+
+                        </div> <!-- end 03 - tab contact -->
+
+                    </div> <!-- end tab content -->
+
+                </div> <!-- end column -->
+            </div> <!-- end row -->
+
+        </section> <!-- end s-info -->
+
+
+        <!-- # footer
+        ================================================== -->
+        <footer class="s-footer">
+
+            <div class="row s-footer__top">
+
+                <div class="column lg-6 stack-on-700 s-footer__block s-footer__info">
+
+                    <h4 class="h6">The Secret Santa Rock Exchange</h4>
+
+                    <p class="desc">
+                    This exchange was started and is moderated by Kayla Iacovino (@kaylai), with help from Kara Brugman (@karabrug).
+                    </p>
+
+                    <ul class="s-footer__social">
+                        <li>
+                            <a href="https://twitter.com/SS_RockExchange">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                                <span class="screen-reader-text">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div> <!-- end s-footer__info -->
+
+                <div class="column lg-6 stack-on-700 s-footer__block s-footer__contact">
+
+                    <h4 class="h6">Contact Info</h4>
+
+                    <div class="row">
+                        <div class="column lg-6 stack-on-1000">
+                            <p>
+                            ssrockexchange[at]gmail[dot]com
+                            </p>
+                        </div>
+                    </div>
+
+                </div> <!-- end s-footer__contact -->
+
+            </div> <!-- end s-footer__top -->
+
+            <div class="row s-footer__bottom">
+                <div class="column lg-12">
+                    <div class="ss-copyright">
+                        <span>© Copyright Khronos 2021</span>
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);"><path d="M6 4H18V6H6zM11 14L11 20 13 20 13 14 18 14 12 8 6 14z"></path></svg>
+                     </a>
+                </div>
+            </div> <!--end s-footer__bottom -->
+
+        </footer> <!--end s-footer -->
+
+    </div> <!-- end pagewrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="plugins.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

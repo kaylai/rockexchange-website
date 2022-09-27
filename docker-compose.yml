@@ -1,0 +1,17 @@
+version: '3'
+services:
+  #Nginx Service
+  webserver:
+    image: nginx:alpine
+    container_name: playground_web
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx/:/etc/nginx/conf.d/
+#Volumes
+volumes:
+  dbdata:
+    driver: local
