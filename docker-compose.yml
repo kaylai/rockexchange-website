@@ -1,0 +1,54 @@
+version: '3'
+services:
+  #Nginx Service
+  webserver:
+    image: nginx:alpine
+    container_name: rock_web
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "80:80"
+    volumes:
+      - ./public:/var/www
+      - ./docker/nginx/:/etc/nginx/conf.d/
+  app:
+    image: php:7.4-fpm-alpine
+    command: php-fpm
+    container_name: rock_php
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./public:/var/www
+  composer:
+    restart: 'no'
+    container_name: composer
+    image: composer:latest
+    command: install
+    volumes:
+      - ./public:/var/www
+  #MySQL Service
+  db:
+    image: mysql:5.7.39
+    container_name: rock_db
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: rocking
+      MYSQL_ROOT_PASSWORD: your_mysql_root_password
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - dbdata:/var/lib/mysql/
+      - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
+    networks:
+      - app-network
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
+#Volumes
+volumes:
+  dbdata:
+    driver: local
